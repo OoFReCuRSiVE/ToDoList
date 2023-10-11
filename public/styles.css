@@ -1,0 +1,101 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&family=Rajdhani:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+
+}
+html{
+    background-color: #ededed;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+/* .container{
+  
+
+} */
+input{
+   
+    display: block;
+    margin: auto;
+    
+}
+.btn{
+    padding: 7px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #df9d10 ;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: medium;
+}
+
+.input-area{
+    padding: 15px;
+    border: none;
+    margin-top: 15px;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 5px 5px 15px -5px #610c0c;
+}
+
+.container-2{
+    padding: 15px;
+    background-color: white;
+    width: 25%;
+    margin: auto;
+    /* margin-top: 10px; */
+    border-radius: 10px;
+    text-align:left;
+    border: 1px solid grey;
+    font-size: 20px;
+    box-shadow: 5px 5px 15px -5px #610c0c;
+    
+}
+
+.checkBox{
+    float: left;
+    margin-right:30px ;
+}
+.container-2:has(input[type="checkbox"]:checked) { 
+    text-decoration: line-through;   
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    background-color: #df9d10;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px 15px -5px #000000;
+}
+#head{
+    width: 20%;
+    background-color: #df9d10;
+    padding: 15px;
+    margin-top: 95px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    box-shadow: 5px 5px 15px -5px #000000;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+.container-3{
+    display: flex;
+    flex-direction: column;
+    
+}

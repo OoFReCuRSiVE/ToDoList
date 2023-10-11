@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <% let d = new Date(); %> <% let day = d.getDate(); %> <% let m =
+    ["January", "February", "March", "April", "May", "June", "July", "August",
+    "September", "October", "November", "December"]; %> <% let month =
+    m[d.getMonth()]; %> <% let year = d.getFullYear(); %> <% let newdate = day +
+    "th " + month + ", " + year; %>
+    <div class="header">
+        <h1><%= newdate %></h1>
+      </div>
+      <div class="container">
+        <form action="/workList" method="POST">
+          <input
+            type="text"
+            placeholder="New Item"
+            name="workItem"
+            class="input-area"
+            required
+          />
+          <input type="submit" class="btn" value="Add" />
+        </form>
+      </div>
+      <% workItem.forEach(workitem => { %>
+        <div class="container-2">
+          <input type="checkbox" class="checkBox" name="check" required />
+          <%= workitem %>
+        </div>
+        <% }) %>
+</body>
+</html>
